@@ -3,23 +3,60 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geoffrey Maas</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js" charset="utf-8"></script>
-    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script> -->
     <script src="js/app.js" charset="utf-8"></script>
 </head>
 
 <body>
-    <div class="landing-box">
-        <!-- <img src="assets/lightning bridge.jpg" alt="bridge storm" /> -->
-        <h1>Geoffrey Maas</h1>
+    <nav role="navigation" class="navbar-inverse navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- <a href="#" class="navbar-brand">Geoffrey Maas</a> -->
+            </div>
+            <!-- Collection of nav links and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about-me">About Me</a>
+                      <!-- <ul>
+                        <h1>Interests</h1>
+                        <li><a href="#">biking</a></li>
+                        <li><a href="#"></a></li>
+                      </ul> -->
+                    </li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
 
+            </div>
+        </div>
+    </nav>
+
+    <div class="landing-box">
+        <div class="title-box">
+            <h1>Geoffrey Maas</h1>
+            <h2>Web Developer</h2>
+            <h2>Charleston, SC</h2>
+        </div>
     </div>
 
     <div class="col-xs-12 main-container">
+
+        <!-- start personal info section  -->
 
         <div class="col-xs-12 personal-info">
             <div class="col-xs-12 col-md-4 geoff-pic">
@@ -27,35 +64,106 @@
 
             </div>
             <div class="col-xs-12 col-md-8 geoff-info">
-                <div class="about-me">
+                <div class="about-me" id="about-me">
                     <h1>About Me</h1>
                     <p>
                         Though originally from New Jersey, I have called Charleston my home for the past 12 years and recently have made the plunge into the wonderful world of web development. It has been a pleasure to find a new passion, solving problems and creating new and
-                        exciting sites is something I truly enjoy. With my newfound skills and old ones I plan on forging a new career and make something of myself in the burgeoning Charleston Tech Industry.
+                        exciting sites. It is something I truly enjoy. With my newfound skills and old ones I plan on forging a new career and make something of myself in the burgeoning Charleston Tech Industry.
                     </p>
                 </div>
-                <div class="interests">
-                  <h1>Interests</h1>
-                  <div class="col-xs-6 col-md-3 hobby">
-                    <a href="#"><img src="/assets/bicycle.svg" alt="" /></a>
 
-                  </div>
-                  <div class="col-xs-6 col-md-3 hobby">
-                    <a href="#"><img src="/assets/drone.svg" alt="" /></a>
-
-                  </div>
-                  <div class="col-xs-6 col-md-3 hobby">
-                    <a href="#"><img src="/assets/photo-camera.svg" alt="" /></a>
-
-                  </div>
-                  <div class="col-xs-6 col-md-3 hobby">
-                    <a href="#"><img src="/assets/laptop.svg" alt="" /></a>
-
-                  </div>
-                </div>
             </div>
 
         </div>
+        <div class="col-xs-12 interests">
+            <div class="col-xs-12 col-md-4 hobby-title">
+                <h1>Interests</h1>
+            </div>
+            <div class="col-md-8 col-xs-12 hobby-bar">
+
+                <div class="col-xs-6 col-md-3 hobby-container">
+                    <div class="hobby" id="bike">
+                        <a href="#"><img src="/assets/bicycle.svg" alt="" /></a>
+
+                    </div>
+
+                </div>
+                <div class="col-xs-6 col-md-3 hobby-container">
+                    <div class="hobby" id="drone">
+                        <a href="#"><img src="/assets/drone.svg" alt="" /></a>
+
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 hobby-container">
+                    <div class="hobby" id="camera">
+                        <a href="#"><img src="/assets/photo-camera.svg" alt="" /></a>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-md-3 hobby-container">
+                    <div class="hobby" id="laptop">
+                        <a href="#"><img src="/assets/laptop.svg" alt="" /></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- End person info section -->
+        <!-- Start project sample section -->
+
+        <div class="col-xs-12 projects">
+          <h1>Projects</h1>
+          <div id="accordion" role="tablist" aria-multiselectable="true">
+<div class="card">
+  <div class="card-header" role="tab" id="headingOne">
+    <h5 class="mb-0">
+      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        Collapsible Group Item #1
+      </a>
+    </h5>
+  </div>
+
+  <div id="collapseOne" class="collapse in" role="tabpanel" aria-labelledby="headingOne">
+    <div class="card-block">
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header" role="tab" id="headingTwo">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Collapsible Group Item #2
+      </a>
+    </h5>
+  </div>
+  <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+    <div class="card-block">
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header" role="tab" id="headingThree">
+    <h5 class="mb-0">
+      <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Collapsible Group Item #3
+      </a>
+    </h5>
+  </div>
+  <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+    <div class="card-block">
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+    </div>
+  </div>
+</div>
+</div>
+
+
+        </div>
+
+        <!-- End projects section -->
+
     </div>
 </body>
 

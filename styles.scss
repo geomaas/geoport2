@@ -1,3 +1,7 @@
+body {
+    padding-top: 50px;
+}
+
 .main-container {
     display: block;
     width: 100%;
@@ -8,32 +12,40 @@
     background-color: lightblue;
 }
 ////////landing box/////////
-.landing-box {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to bottom, rgba(0,0,0, 0.5), rgba(0, 0, 0, 0.25) ), url("../assets/lightning_bridge.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    h1 {
-        color: white;
-        margin: 0;
-    }
-}
-@media screen and (min-width: 1px) and (max-width: 767px) {
+@media screen and (max-device-width: 767px) {
     .landing-box {
         width: 100%;
         height: 100vh;
         background: url("../assets/st_philips.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
+}
+@media screen and (min-device-width:768px) {
+    .landing-box {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to bottom, rgba(0,0,0, 0.5), rgba(0, 0, 0, 0.25) ), url("../assets/lightning_bridge.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+.title-box {
+    position: absolute;
+    width: 100%;
+    background-color: rgba(31, 59, 75, 0.3);
+    color: white;
+    margin: auto;
+    padding-left: 5%;
 }
 ///////////// personal info styling/////////
 .personal-info {
     display: inline-block;
     width: 100%;
-    // height: 500px;
     padding: 0;
-    margin: 0 0 5%;
+    margin: 0;
     background-color: violet;
 }
 .geoff-info {
@@ -45,15 +57,18 @@
 .about-me {
     background-color: lightgreen;
     width: 90%;
-    border-radius: 5px;
-    margin-top: 2%;
     margin: auto;
+    padding: 5%;
+    vertical-align: middle;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 2rem;
 }
 .geoff-pic {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: orange;
+    // background-color: orange;
     img {
         max-width: 80%;
         max-height: 80%;
@@ -62,14 +77,39 @@
     }
 }
 .interests {
-
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
-.hobby{
-  background-color: lightgray;
-  border: 1px solid black;
-  padding: 1%;
-  img {
-    max-width: 80%;
-  }
-
+.hobby {
+    background-color: lightgray;
+    padding: 5%;
+    img {
+        max-width: 75%;
+    }
+}
+.hobby-bar {
+    padding: 0;
+}
+.hobby-title {
+    vertical-align: middle;
+    margin: auto;
+}
+.hobby-container {
+    background-color: lightgray;
+    border: 1px solid black;
+    padding: 2%;
+}
+// #laptop {
+//     &:hover {
+//
+//     }
+// }
+.card {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.projects {
+  text-align: center;
 }
