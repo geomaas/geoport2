@@ -1,7 +1,6 @@
 body {
     padding-top: 50px;
 }
-
 .main-container {
     display: block;
     width: 100%;
@@ -64,52 +63,60 @@ body {
     margin-bottom: 5%;
     font-size: 2rem;
 }
-.geoff-pic {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    // background-color: orange;
-    img {
-        max-width: 80%;
-        max-height: 80%;
-        vertical-align: middle;
-        margin: 10%;
+@media screen and (max-device-width: 767px) {
+    .geoff-pic {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: orange;
+        img {
+            max-width: 75%;
+            max-height: 75%;
+            vertical-align: middle;
+            margin: 10%;
+            border-radius: 100%;
+        }
+    }
+}
+@media screen and (min-device-width: 768px) {
+    .geoff-pic {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: orange;
+        img {
+            max-width: 35%;
+            max-height: 35%;
+            vertical-align: middle;
+            margin: 3%;
+            border-radius: 10px;
+        }
     }
 }
 .interests {
+    height: 100%;
     margin: 0;
     padding: 0;
-    width: 100%;
-}
-.hobby {
-    background-color: lightgray;
-    padding: 5%;
-    img {
-        max-width: 75%;
-    }
-}
-.hobby-bar {
-    padding: 0;
-}
-.hobby-title {
-    vertical-align: middle;
-    margin: auto;
+    text-align: center;
 }
 .hobby-container {
+    background-color: lightgreen;
+    width: 90%;
+    margin: auto;
+    padding: 3%;
+    vertical-align: middle;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.hobby {
+    display: inline-block;
+    width: 45%;
     background-color: lightgray;
-    border: 1px solid black;
-    padding: 2%;
-}
-// #laptop {
-//     &:hover {
-//
-//     }
-// }
-.card {
-    background-color: white;
-    margin: 0;
     padding: 0;
-}
-.projects {
-  text-align: center;
+
+    margin: 1%;
+    img {
+        max-width: 65%;
+
+    }
 }
