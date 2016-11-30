@@ -1,6 +1,12 @@
 body {
     padding-top: 50px;
 }
+#trigger1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+}
 .main-container {
     display: block;
     width: 100%;
@@ -41,11 +47,44 @@ body {
 }
 ///////////// personal info styling/////////
 .personal-info {
-    display: inline-block;
     width: 100%;
     padding: 0;
     margin: 0;
     background-color: violet;
+}
+@media screen and (max-device-width: 767px) {
+    .geoff-pic {
+        margin: 0;
+        padding: 0;
+        background-color: orange;
+        img {
+            max-width: 65%;
+            max-height: 65%;
+            vertical-align: middle;
+            margin: 5%;
+            border-radius: 100%;
+            -webkit-box-shadow: 0 0 53px -6px rgba(0,0,0,0.88);
+            -moz-box-shadow: 0 0 53px -6px rgba(0,0,0,0.88);
+            box-shadow: 0 0 53px -6px rgba(0,0,0,0.88);
+        }
+    }
+}
+@media screen and (min-device-width: 768px) {
+    .geoff-pic {
+        margin: 0;
+        padding: 0;
+        background-color: orange;
+        img {
+            max-width: 35%;
+            max-height: 35%;
+            vertical-align: middle;
+            margin: 3%;
+            border-radius: 10px;
+            -webkit-box-shadow: 0 0 53px -6px rgba(0,0,0,0.88);
+            -moz-box-shadow: 0 0 53px -6px rgba(0,0,0,0.88);
+            box-shadow: 0 0 53px -6px rgba(0,0,0,0.88);
+        }
+    }
 }
 .geoff-info {
     height: 100%;
@@ -56,42 +95,12 @@ body {
 .about-me {
     background-color: lightgreen;
     width: 90%;
+    height: 100%;
     margin: auto;
     padding: 5%;
-    vertical-align: middle;
     margin-top: 5%;
     margin-bottom: 5%;
     font-size: 2rem;
-}
-@media screen and (max-device-width: 767px) {
-    .geoff-pic {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        background-color: orange;
-        img {
-            max-width: 75%;
-            max-height: 75%;
-            vertical-align: middle;
-            margin: 10%;
-            border-radius: 100%;
-        }
-    }
-}
-@media screen and (min-device-width: 768px) {
-    .geoff-pic {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        background-color: orange;
-        img {
-            max-width: 35%;
-            max-height: 35%;
-            vertical-align: middle;
-            margin: 3%;
-            border-radius: 10px;
-        }
-    }
 }
 .interests {
     height: 100%;
@@ -104,19 +113,90 @@ body {
     width: 90%;
     margin: auto;
     padding: 3%;
-    vertical-align: middle;
     margin-top: 5%;
     margin-bottom: 5%;
 }
-.hobby {
-    display: inline-block;
-    width: 45%;
-    background-color: lightgray;
-    padding: 0;
+@media screen and (max-device-width: 767px) {
+    .hobby {
+        display: inline-block;
 
-    margin: 1%;
-    img {
-        max-width: 65%;
-
+        width: 100%;
+        background-color: gray;
+        margin: 1%;
+        padding: 1%;
+        border-radius: 5px;
+        img {
+            max-width: 20%;
+        }
     }
+}
+@media screen and (min-device-width: 768px) {
+    .hobby {
+
+        display: inline-block;
+        width: 35%;
+        background-color: gray;
+        padding: 3%;
+        margin: 1%;
+        margin-left: 1.5%;
+        margin-right: 1.5%;
+        border-radius: 5px;
+        transition: .5s;
+
+        img {
+            max-width: 65%;
+
+        }
+        &:hover {
+          transform: scale(.9);
+        }
+    }
+}
+//////////////////// project styling ///////////
+.projects-container {
+    display: inline-block;
+}
+.projects {
+    background-color: lightyellow;
+    width: 97%;
+    margin: 5% auto;
+}
+@media screen and (max-device-width: 767px) {
+    .panel-body {
+        img {
+            display: block;
+            max-width: 75%;
+            margin: auto auto 2%;
+        }
+        p {
+          margin: 5%;
+        }
+    }
+}
+@media screen and (min-device-width: 768px) {
+    .panel-body {
+        img {
+            max-width: 45%;
+            margin: 2%;
+            float: left;
+            &:hover{
+              box-shadow: inset 0 0 0 25px #53a7ea;
+            }
+        }
+        p {
+          font-size: 1.5em;
+          margin:  2%;
+        }
+    }
+}
+//////////////////// contact info styling /////////
+.contact-container {
+    background-color: pink;
+    width: 100%;
+}
+.contact-info {
+    background-color: lightyellow;
+    height: 400px;
+    width: 97%;
+    margin: 5% auto;
 }

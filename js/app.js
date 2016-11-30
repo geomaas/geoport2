@@ -1,2 +1,9 @@
-
-TweenMax.to("#bike", 1, {opacity:0, scale: 0, ease: Bounce.easeOut});
+// var controller = new ScrollMagic.Controller();
+//
+// var scene = new ScrollMagic.Scene({
+//   triggerElement: "#geoff"
+//     })
+//     .setTween("#geoff-pic", 0.5, {
+//         scale: 1.5
+//     })
+//     .addTo(controller);
