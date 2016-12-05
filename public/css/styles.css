@@ -1,19 +1,24 @@
 body {
   padding-top: 50px; }
 
-#trigger1 {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  background-color: white; }
+h1 {
+  font-family: 'Montserrat', sans-serif; }
 
 .main-container {
   display: block;
   width: 100%;
   padding: 0;
   margin: 0;
-  text-align: center;
-  background-color: lightblue; }
+  text-align: center; }
+
+#particles-js {
+  position: fixed;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #192231, #494e6b); }
 
 @media screen and (max-device-width: 767px) {
   .landing-box {
@@ -22,7 +27,10 @@ body {
     background: url("../assets/st_philips.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; } }
+    background-position: center;
+    -webkit-box-shadow: 3px 13px 26px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 13px 26px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 13px 26px 3px rgba(0, 0, 0, 0.75); } }
 
 @media screen and (min-device-width: 768px) {
   .landing-box {
@@ -31,87 +39,121 @@ body {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)), url("../assets/lightning_bridge.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; } }
+    background-position: center;
+    -webkit-box-shadow: 3px 13px 26px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 3px 13px 26px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 3px 13px 26px 3px rgba(0, 0, 0, 0.75); } }
 
 .title-box {
   position: absolute;
   width: 100%;
   background-color: rgba(31, 59, 75, 0.3);
   color: white;
-  margin: auto;
+  margin: 6% auto auto;
   padding-left: 5%; }
 
 .personal-info {
   width: 100%;
   padding: 0;
-  margin: 0;
-  background-color: violet; }
+  margin: 0; }
 
 @media screen and (max-device-width: 767px) {
   .geoff-pic {
     margin: 0;
-    padding: 0;
-    background-color: orange; }
+    padding: 0; }
     .geoff-pic img {
+      display: inline-block;
       max-width: 65%;
       max-height: 65%;
       vertical-align: middle;
-      margin: 5%;
+      margin: 70px 5% 5%;
       border-radius: 100%;
       -webkit-box-shadow: 0 0 53px -6px rgba(0, 0, 0, 0.88);
       -moz-box-shadow: 0 0 53px -6px rgba(0, 0, 0, 0.88);
-      box-shadow: 0 0 53px -6px rgba(0, 0, 0, 0.88); } }
+      box-shadow: 0 0 53px -6px rgba(0, 0, 0, 0.88); }
+    .geoff-pic .first-name {
+      display: none; }
+    .geoff-pic .last-name {
+      display: none; } }
 
 @media screen and (min-device-width: 768px) {
   .geoff-pic {
-    margin: 0;
-    padding: 0;
-    background-color: orange; }
+    margin: auto 5% auto auto;
+    padding: 0; }
     .geoff-pic img {
-      max-width: 35%;
-      max-height: 35%;
+      display: inline-block;
+      max-width: 20%;
+      max-height: 20%;
       vertical-align: middle;
-      margin: 3%;
-      border-radius: 10px;
+      margin: 60px 3% 3%;
+      border-radius: 100%;
       -webkit-box-shadow: 0 0 53px -6px rgba(0, 0, 0, 0.88);
       -moz-box-shadow: 0 0 53px -6px rgba(0, 0, 0, 0.88);
-      box-shadow: 0 0 53px -6px rgba(0, 0, 0, 0.88); } }
+      box-shadow: 0 0 53px -6px rgba(0, 0, 0, 0.88); }
+    .geoff-pic .first-name {
+      display: inline-block;
+      vertical-align: middle; }
+      .geoff-pic .first-name h1 {
+        color: white;
+        font-size: 10em;
+        text-shadow: 4px 2px 5px black;
+        margin: auto; }
+    .geoff-pic .last-name {
+      display: inline-block;
+      vertical-align: middle; }
+      .geoff-pic .last-name h1 {
+        color: white;
+        font-size: 10em;
+        text-shadow: 4px 2px 5px black;
+        margin: auto; } }
 
-.geoff-info {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  text-align: center; }
+@media screen and (min-device-width: 768px) {
+  .geoff-info {
+    margin: 0;
+    padding: 0;
+    text-align: center; } }
+
+@media screen and (max-device-width: 767px) {
+  .geoff-info {
+    margin: 0;
+    padding: 0;
+    text-align: center; } }
 
 .about-me {
-  background-color: lightgreen;
+  background-color: rgba(152, 135, 143, 0.75);
+  color: white;
   width: 90%;
-  height: 100%;
   margin: auto;
   padding: 5%;
-  margin-top: 5%;
   margin-bottom: 5%;
-  font-size: 2rem; }
+  border-radius: 5px;
+  font-size: 2rem;
+  -webkit-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75); }
 
 .interests {
-  height: 100%;
   margin: 0;
   padding: 0;
   text-align: center; }
 
 .hobby-container {
-  background-color: lightgreen;
+  background-color: rgba(152, 135, 143, 0.75);
+  color: white;
+  border-radius: 5px;
   width: 90%;
   margin: auto;
   padding: 3%;
-  margin-top: 5%;
-  margin-bottom: 5%; }
+  margin-bottom: 5%;
+  -webkit-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75); }
 
 @media screen and (max-device-width: 767px) {
   .hobby {
     display: inline-block;
     width: 100%;
-    background-color: gray;
+    background-color: #985e6d;
     margin: 1%;
     padding: 1%;
     border-radius: 5px; }
@@ -121,26 +163,31 @@ body {
 @media screen and (min-device-width: 768px) {
   .hobby {
     display: inline-block;
-    width: 35%;
-    background-color: gray;
+    width: 40%;
+    background-color: #985e6d;
     padding: 3%;
-    margin: 1%;
-    margin-left: 1.5%;
-    margin-right: 1.5%;
+    margin: 1% 1.5%;
     border-radius: 5px;
-    transition: .5s; }
+    transition: 0.5s; }
     .hobby img {
       max-width: 65%; }
     .hobby:hover {
-      transform: scale(0.9); } }
+      transform: scale(0.85); }
+    .hobby #drone {
+      background: url("assets/lightning_bridge.jpg"); } }
 
 .projects-container {
   display: inline-block; }
 
 .projects {
-  background-color: lightyellow;
+  background-color: rgba(152, 135, 143, 0.75);
   width: 97%;
-  margin: 5% auto; }
+  margin: 5% auto;
+  padding: 2%;
+  border-radius: 5px;
+  -webkit-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75); }
 
 @media screen and (max-device-width: 767px) {
   .panel-body img {
@@ -161,12 +208,80 @@ body {
     font-size: 1.5em;
     margin: 2%; } }
 
-.contact-container {
-  background-color: pink;
-  width: 100%; }
+@media screen and (max-device-width: 767px) {
+  .contact-container {
+    width: 100%;
+    padding: 3%; } }
 
-.contact-info {
-  background-color: lightyellow;
-  height: 400px;
-  width: 97%;
-  margin: 5% auto; }
+@media screen and (min-device-width: 768px) {
+  .contact-container {
+    display: flex;
+    width: 100%;
+    padding: 3%; } }
+
+.contact-form {
+  background-color: rgba(152, 135, 143, 0.75);
+  margin-bottom: 3%;
+  margin-right: 5%;
+  border-radius: 5px;
+  -webkit-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75); }
+
+.contact-box {
+  background-color: #985e6d;
+  display: inline-block;
+  width: 90%;
+  margin: auto auto 3%;
+  vertical-align: middle;
+  border-radius: 5px; }
+  .contact-box .contact-icon {
+    font-size: 10rem; }
+
+.social-media {
+  background-color: rgba(152, 135, 143, 0.75);
+  float: right;
+  border-radius: 5px;
+  margin-bottom: 3%;
+  margin-left: 2%;
+  -webkit-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75); }
+
+@media screen and (max-device-width: 767px) {
+  .social-buttons {
+    display: inline-block;
+    width: 30%;
+    background-color: #985e6d;
+    margin: 3% auto; }
+    .social-buttons .fa {
+      text-align: left;
+      font-size: 10rem; }
+    .social-buttons h3 {
+      text-align: right; }
+    .social-buttons #cw-logo {
+      width: 8rem;
+      margin: 2%; }
+    .social-buttons #cw-badge {
+      width: 90%;
+      margin: 2%; } }
+
+@media screen and (min-device-width: 768px) {
+  .social-buttons {
+    display: inline-block;
+    width: 90%;
+    background-color: #985e6d;
+    margin: 3% auto;
+    border-radius: 5px; }
+    .social-buttons .fa {
+      text-align: left;
+      font-size: 10rem; }
+    .social-buttons h3 {
+      text-align: right; }
+    .social-buttons #cw-logo {
+      width: 8rem;
+      margin: 2%; }
+    .social-buttons #cw-badge {
+      display: none;
+      width: 90%;
+      margin: 2%; } }
