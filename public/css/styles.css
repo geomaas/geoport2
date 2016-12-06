@@ -28,9 +28,9 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-box-shadow: 3px 13px 26px 3px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 3px 13px 26px 3px rgba(0, 0, 0, 0.75);
-    box-shadow: 3px 13px 26px 3px rgba(0, 0, 0, 0.75); } }
+    -webkit-box-shadow: -2px 10px 18px -6px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: -2px 10px 18px -6px rgba(0, 0, 0, 0.58);
+    box-shadow: -2px 10px 18px -6px rgba(0, 0, 0, 0.58); } }
 
 @media screen and (min-device-width: 768px) {
   .landing-box {
@@ -40,9 +40,9 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    -webkit-box-shadow: 3px 13px 26px 3px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 3px 13px 26px 3px rgba(0, 0, 0, 0.75);
-    box-shadow: 3px 13px 26px 3px rgba(0, 0, 0, 0.75); } }
+    -webkit-box-shadow: -2px 10px 18px -6px rgba(0, 0, 0, 0.58);
+    -moz-box-shadow: -2px 10px 18px -6px rgba(0, 0, 0, 0.58);
+    box-shadow: -2px 10px 18px -6px rgba(0, 0, 0, 0.58); } }
 
 .title-box {
   position: absolute;
@@ -51,11 +51,6 @@ h1 {
   color: white;
   margin: 6% auto auto;
   padding-left: 5%; }
-
-.personal-info {
-  width: 100%;
-  padding: 0;
-  margin: 0; }
 
 @media screen and (max-device-width: 767px) {
   .geoff-pic {
@@ -108,23 +103,24 @@ h1 {
         margin: auto; } }
 
 @media screen and (min-device-width: 768px) {
-  .geoff-info {
-    margin: 0;
+  .personal-info {
+    display: flex;
+    width: 100%;
     padding: 0;
-    text-align: center; } }
+    margin: 0; } }
 
 @media screen and (max-device-width: 767px) {
-  .geoff-info {
-    margin: 0;
+  .personal-info {
+    width: 100%;
     padding: 0;
-    text-align: center; } }
+    margin: auto; } }
 
-.about-me {
+.geoff-info {
   background-color: rgba(152, 135, 143, 0.75);
   color: white;
   width: 90%;
-  margin: auto;
-  padding: 5%;
+  margin: 5%;
+  padding: 3%;
   margin-bottom: 5%;
   border-radius: 5px;
   font-size: 2rem;
@@ -133,16 +129,11 @@ h1 {
   box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75); }
 
 .interests {
-  margin: 0;
-  padding: 0;
-  text-align: center; }
-
-.hobby-container {
   background-color: rgba(152, 135, 143, 0.75);
   color: white;
   border-radius: 5px;
   width: 90%;
-  margin: auto;
+  margin: 5%;
   padding: 3%;
   margin-bottom: 5%;
   -webkit-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
@@ -236,7 +227,8 @@ h1 {
   vertical-align: middle;
   border-radius: 5px; }
   .contact-box .contact-icon {
-    font-size: 10rem; }
+    font-size: 12.5rem;
+    margin: 2%; }
 
 .social-media {
   background-color: rgba(152, 135, 143, 0.75);
@@ -251,9 +243,10 @@ h1 {
 @media screen and (max-device-width: 767px) {
   .social-buttons {
     display: inline-block;
-    width: 30%;
+    width: 90%;
     background-color: #985e6d;
-    margin: 3% auto; }
+    margin: 2% auto;
+    border-radius: 5px; }
     .social-buttons .fa {
       text-align: left;
       font-size: 10rem; }
@@ -263,6 +256,7 @@ h1 {
       width: 8rem;
       margin: 2%; }
     .social-buttons #cw-badge {
+      display: none;
       width: 90%;
       margin: 2%; } }
 
@@ -279,9 +273,8 @@ h1 {
     .social-buttons h3 {
       text-align: right; }
     .social-buttons #cw-logo {
-      width: 8rem;
-      margin: 2%; }
+      width: 8.5rem;
+      margin: 2.5%; }
     .social-buttons #cw-badge {
-      display: none;
       width: 90%;
       margin: 2%; } }
