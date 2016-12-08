@@ -2,16 +2,8 @@ body {
     padding-top: 50px;
 }
 h1 {
-    // font-family: 'Oswald', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
-///////trigger div for scroll magic
-// #trigger1 {
-//     position: absolute;
-//     width: 50px;
-//     height: 50px;
-//     background-color: white;
-// }
 .main-container {
     display: block;
     width: 100%;
@@ -32,6 +24,7 @@ h1 {
 ////////landing box/////////
 @media screen and (max-device-width: 767px) {
     .landing-box {
+        font-family: 'Montserrat', sans-serif;
         width: 100%;
         height: 100vh;
         background: url("../assets/st_philips.jpg");
@@ -45,6 +38,7 @@ h1 {
 }
 @media screen and (min-device-width:768px) {
     .landing-box {
+        font-family: 'Montserrat', sans-serif;
         width: 100%;
         height: 100vh;
         background: linear-gradient(to bottom, rgba(0,0,0, 0.5), rgba(0, 0, 0, 0.25) ), url("../assets/lightning_bridge.jpg");
@@ -64,7 +58,7 @@ h1 {
     margin: 6% auto auto;
     padding-left: 5%;
 }
-///////////// personal info styling/////////
+///////////// personal info styling/////////////////////////////
 @media screen and (max-device-width: 767px) {
     .geoff-pic {
         margin: 0;
@@ -157,23 +151,7 @@ h1 {
     -moz-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
     box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
 }
-// .about-me {
-//     background-color: rgba(#98878f, 0.75);
-//     color: white;
-//     width: 90%;
-//     margin: auto;
-//     padding: 3%;
-//     margin-bottom: 5%;
-//     border-radius: 5px;
-//     font-size: 2rem;
-//     -webkit-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
-//     -moz-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
-//     box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
-// }
 .interests {
-    // margin: 0;
-    // padding: 0;
-    // text-align: center;
     background-color: rgba(#98878f, 0.75);
     color: white;
     border-radius: 5px;
@@ -184,19 +162,10 @@ h1 {
     -webkit-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
     box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
+    h1 {
+        margin-bottom: 8%;
+    }
 }
-// .hobby-container {
-//     background-color: rgba(#98878f, 0.75);
-//     color: white;
-//     border-radius: 5px;
-//     width: 90%;
-//     margin: auto;
-//     padding: 3%;
-//     margin-bottom: 5%;
-//     -webkit-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
-//     -moz-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
-//     box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
-// }
 @media screen and (max-device-width: 767px) {
     .hobby {
         display: inline-block;
@@ -214,7 +183,7 @@ h1 {
     .hobby {
         display: inline-block;
         width: 40%;
-        background-color: #985e6d;
+        background-color: rgba(#985e6d,1);
         padding: 3%;
         margin: 1% 1.5%;
         border-radius: 5px;
@@ -223,16 +192,69 @@ h1 {
             max-width: 65%;
         }
         &:hover {
-            transform: scale(.85);
-        }
-        #drone {
-            background: url("assets/lightning_bridge.jpg");
+            transform: scale(1.1);
         }
     }
 }
-//////////////////// project styling ///////////
+
+#camera {
+  transition: .5s;
+  &:hover{
+    background: url("../assets/lightning_bridge.jpg");
+    background-size: cover;
+    background-position: center;
+    transition: .5s;
+  }
+}
+#drone{
+  background: url("../assets/");
+  background-size: cover;
+  background-position: center;
+}
+#theatre{
+  background: url("../assets/");
+  background-size: cover;
+  background-position: center;
+}
+#laptop{
+  background: url("../assets/");
+  background-size: cover;
+  background-position: center;
+}
+
+.hobby-container {
+    display: inline-block;
+    width: 100%;
+    // background-color: lightgreen;
+}
+.hobby-window {
+    background-color: rgba(#98878f, 0.75);
+    width: 95%;
+    height: 300px;
+    margin: 5% auto;
+    padding: 2%;
+    border-radius: 5px;
+    h1 {
+      color: white;
+    }
+}
+// #hobby-win{
+//   display: none;
+//   background-color: rgba(#98878f, 0.75);
+//   width: 100%;
+//   height: 300px;
+//   margin: 5% auto;
+//   padding: 2%;
+//   border-radius: 5px;
+//   h1 {
+//     color: white;
+//   }
+// }
+//////////////////// project styling //////////////////////////////
 .projects-container {
     display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
 }
 .projects {
     background-color: rgba(#98878f, 0.75);
@@ -243,6 +265,22 @@ h1 {
     -webkit-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
     box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
+    h1 {
+        margin-bottom: 2%;
+        color: white;
+        font-size: 5rem;
+    }
+}
+.panel-heading {
+    padding: 0;
+}
+.panel-title {
+    background-color: #985e6d;
+    padding: 10px;
+    font-size: 2.5rem;
+}
+.panel-body {
+    background-color: #985e6d;
 }
 @media screen and (max-device-width: 767px) {
     .panel-body {
@@ -250,6 +288,14 @@ h1 {
             display: block;
             max-width: 75%;
             margin: auto auto 2%;
+            border-radius: 5px;
+            -webkit-box-shadow: 13px 13px 31px -9px rgba(0,0,0,0.58);
+            -moz-box-shadow: 13px 13px 31px -9px rgba(0,0,0,0.58);
+            box-shadow: 13px 13px 31px -9px rgba(0,0,0,0.58);
+            transition: 0.5s;
+            &:hover {
+                transform: scale(.95);
+            }
         }
         p {
             margin: 5%;
@@ -259,11 +305,16 @@ h1 {
 @media screen and (min-device-width: 768px) {
     .panel-body {
         img {
+            border-radius: 5px;
             max-width: 45%;
             margin: 2%;
             float: left;
+            -webkit-box-shadow: 13px 13px 31px -9px rgba(0,0,0,0.58);
+            -moz-box-shadow: 13px 13px 31px -9px rgba(0,0,0,0.58);
+            box-shadow: 13px 13px 31px -9px rgba(0,0,0,0.58);
+            transition: 0.5s;
             &:hover {
-                box-shadow: inset 0 0 0 25px #53a7ea;
+                transform: scale(1.05);
             }
         }
         p {
@@ -272,11 +323,63 @@ h1 {
         }
     }
 }
-//////////////////// contact info styling /////////
+.project-links {
+    display: inline-block;
+    background-color: #985e6d;
+    padding: 1%;
+    border-radius: 5px;
+    transition: 0.5s;
+    .fa {
+        display: inline-block;
+        font-size: 7rem;
+    }
+    h3 {
+        display: inline-block;
+    }
+    a {
+        text-decoration: none;
+        transition: 0.5s;
+        color: #333333;
+    }
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+//////////////////// contact info styling //////////////////////////////
 @media screen and (max-device-width: 767px) {
     .contact-container {
         width: 100%;
         padding: 3%;
+    }
+    .contact-box {
+        display: inline-block;
+        width: 90%;
+        background-color: #985e6d;
+        margin: 2% auto;
+        border-radius: 5px;
+        padding: 2%;
+        .fa {
+            display: inline-block;
+            color: #333333;
+            font-size: 10rem;
+            transition: 0.4s;
+        }
+        p {
+            text-align: center;
+            color: #333333;
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        // &:hover {
+        //     transition: 0.5s;
+        //     p {
+        //         opacity: 1;
+        //     }
+        //     // .fa {
+        //     //     margin-left: 55%;
+        //     //     transform: scale(.8);
+        //     // }
+        // }
     }
 }
 @media screen and (min-device-width: 768px) {
@@ -285,19 +388,44 @@ h1 {
         width: 100%;
         padding: 3%;
     }
+    .contact-box {
+        display: inline-block;
+        width: 90%;
+        background-color: #985e6d;
+        margin: 2% auto;
+        border-radius: 5px;
+        padding: 2%;
+        .fa {
+            display: inline-block;
+            color: #333333;
+            font-size: 10rem;
+            transition: 0.4s;
+        }
+        p {
+            position: absolute;
+            opacity: 0;
+            margin-left: 2%;
+            margin-top: -10%;
+            color: #333333;
+            font-size: 2.8rem;
+            font-family: 'Montserrat', sans-serif;
+            transition: 0.5s;
+        }
+        &:hover {
+            transition: 0.5s;
+            p {
+                opacity: 1;
+                font-size: 2rem;
+            }
+            .fa {
+                margin-left: 50%;
+                transform: scale(.75);
+            }
+        }
+    }
 }
-// .contact-info {
-//     display: inline-block;
-//     background-color: rgba(#98878f, 0.75);
-//     width: 97%;
-//     margin: 5% auto;
-//     padding: 3%;
-//     border-radius: 5px;
-//     -webkit-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
-//     -moz-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
-//     box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
-// }
 .contact-form {
+    color: white;
     background-color: rgba(#98878f, 0.75);
     margin-bottom: 3%;
     margin-right: 5%;
@@ -306,19 +434,8 @@ h1 {
     -moz-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
     box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
 }
-.contact-box {
-    background-color: #985e6d;
-    display: inline-block;
-    width: 90%;
-    margin: auto auto 3%;
-    vertical-align: middle;
-    border-radius: 5px;
-    .contact-icon {
-        font-size: 12.5rem;
-        margin: 2%;
-    }
-}
 .social-media {
+    color: white;
     background-color: rgba(#98878f, 0.75);
     float: right;
     border-radius: 5px;
@@ -327,7 +444,6 @@ h1 {
     -webkit-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
     box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
-
 }
 @media screen and (max-device-width: 767px) {
     .social-buttons {
@@ -336,12 +452,18 @@ h1 {
         background-color: #985e6d;
         margin: 2% auto;
         border-radius: 5px;
+        padding: 2%;
         .fa {
             text-align: left;
             font-size: 10rem;
+            margin: 1.5%;
+            color: #333333;
         }
-        h3 {
-            text-align: right;
+        p {
+            text-align: center;
+            color: #333333;
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
         }
         #cw-logo {
             width: 8rem;
@@ -360,21 +482,52 @@ h1 {
         width: 90%;
         background-color: #985e6d;
         margin: 3% auto;
+        padding: 4%;
         border-radius: 5px;
+        transition: 0.5s;
         .fa {
-            text-align: left;
+            display: inline-block;
+            color: #333333;
             font-size: 10rem;
+            transition: 0.4s;
         }
-        h3 {
-            text-align: right;
+        p {
+            position: absolute;
+            opacity: 0;
+            margin-left: 2%;
+            margin-top: -21%;
+            text-align: center;
+            color: #333333;
+            font-size: 4.5rem;
+            font-family: 'Montserrat', sans-serif;
+            transition: 0.5s;
         }
         #cw-logo {
+            color: #333333;
             width: 8.5rem;
             margin: 2.5%;
+            transition: 0.4s;
         }
         #cw-badge {
             width: 90%;
             margin: 2%;
+        }
+        &:hover {
+            transition: 0.5s;
+            // -webkit-transition-delay: 0.2s;
+            // /* Safari */
+            // transition-delay: 0.2s;
+            p {
+                opacity: 1;
+            }
+            .fa {
+                margin-left: 65%;
+                transform: scale(.5);
+            }
+            #cw-logo {
+                margin-left: 79%;
+                transform: scale(.5);
+            }
         }
     }
 }
