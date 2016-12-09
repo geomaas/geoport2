@@ -170,27 +170,33 @@ h1 {
       transform: scale(1.1); } }
 
 #camera {
-  transition: .5s; }
+  transition: 0.5s; }
   #camera:hover {
     background: url("../assets/lightning_bridge.jpg");
     background-size: cover;
     background-position: center;
-    transition: .5s; }
+    transition: 0.5s; }
 
 #drone {
-  background: url("../assets/");
-  background-size: cover;
-  background-position: center; }
+  transition: 0.5s; }
+  #drone:hover {
+    background: url("../assets/2ndpres_screen.png");
+    background-size: cover;
+    background-position: center; }
 
 #theatre {
-  background: url("../assets/");
-  background-size: cover;
-  background-position: center; }
+  transition: 0.5s; }
+  #theatre:hover {
+    background: url("../assets/jimmy.jpg");
+    background-size: cover;
+    background-position: center; }
 
-#laptop {
-  background: url("../assets/");
-  background-size: cover;
-  background-position: center; }
+#travel {
+  transition: 0.5s; }
+  #travel:hover {
+    background: url("../assets/tajmahal_w_lauren.jpg");
+    background-size: cover;
+    background-position: center; }
 
 .hobby-container {
   display: inline-block;
@@ -205,6 +211,9 @@ h1 {
   border-radius: 5px; }
   .hobby-window h1 {
     color: white; }
+
+#close-hobby {
+  background-color: #985e6d; }
 
 .projects-container {
   display: inline-block;
@@ -330,14 +339,14 @@ h1 {
       margin-left: 2%;
       margin-top: -10%;
       color: #333333;
-      font-size: 2.8rem;
+      font-size: 2.5rem;
       font-family: 'Montserrat', sans-serif;
       transition: 0.5s; }
     .contact-box:hover {
       transition: 0.5s; }
       .contact-box:hover p {
         opacity: 1;
-        font-size: 2rem; }
+        font-size: 3rem; }
       .contact-box:hover .fa {
         margin-left: 50%;
         transform: scale(0.75); } }
@@ -407,10 +416,10 @@ h1 {
       position: absolute;
       opacity: 0;
       margin-left: 2%;
-      margin-top: -21%;
+      margin-top: -20%;
       text-align: center;
       color: #333333;
-      font-size: 4.5rem;
+      font-size: 3.5rem;
       font-family: 'Montserrat', sans-serif;
       transition: 0.5s; }
     .social-buttons #cw-logo {
@@ -424,7 +433,8 @@ h1 {
     .social-buttons:hover {
       transition: 0.5s; }
       .social-buttons:hover p {
-        opacity: 1; }
+        opacity: 1;
+        font-size: 4rem; }
       .social-buttons:hover .fa {
         margin-left: 65%;
         transform: scale(0.5); }

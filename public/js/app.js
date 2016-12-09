@@ -2,6 +2,7 @@
 $(document).ready(function() {
 
     /*-------- loading for particles background -------------- */
+    /*--------courtesy of http://vincentgarreau.com/particles.js/------------*/
 
     particlesJS.load('particles-js', 'assets/particles.json', function() {
         console.log('callback - particles.js config loaded');
@@ -27,16 +28,18 @@ $(document).ready(function() {
         });
     });
 
-    /*----------------            ------------------*/
+    /*---------------- Hobby Window click events ------------------*/
 
 
     $('.hobby').click(function(e) {
         e.preventDefault();
-        console.log('click');
         $('#hobby-win').slideToggle();
     });
 
-
+    $('#close-hobby').click(function(e) {
+      e.preventDefault();
+      $('#hobby-win').slideUp();
+    });
 });
 
 },{}]},{},[1])

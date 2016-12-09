@@ -13,9 +13,9 @@
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js" charset="utf-8"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js" charset="utf-8"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js" charset="utf-8"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js" charset="utf-8"></script> -->
     <script src="js/particles.js" charset="utf-8"></script>
     <script src="js/app.js" charset="utf-8"></script>
 </head>
@@ -106,8 +106,8 @@
                     </div>
                 </a>
                 <a href="#hobby-win">
-                    <div class="hobby" id="laptop">
-                        <img src="/assets/laptop.svg" alt="" />
+                    <div class="hobby" id="travel">
+                        <img src="/assets/departures.svg" alt="" />
 
                     </div>
                 </a>
@@ -120,6 +120,8 @@
         <div class="hobby-container"id="hobby-win">
           <div class="hobby-window">
             <h1>Under Contruction!</h1>
+            <button type="button" class="btn btn-secondary" id="close-hobby">Close</button>
+
           </div>
 
         </div>
@@ -143,11 +145,13 @@
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body">
-                                <a href="https://www.searchandenjoy.online" target="_blank"><img src="assets/searchenjoy.png" alt="" /></a>
+                                <a href="https://github.com/SearchAndEnjoy/ScavengerHunt" target="_blank">
+                                  <img src="assets/searchenjoy.png" alt="" />
+                                </a>
                                 <p>
                                     My final group project at the Iron Yard. A location-based mobile trivia game that has teams racing around Charleston to solve a series of clues.
                                 </p>
-                                <h5>(Test the app by clicking Demo Mode then starting the game up normally. This lets you see the gameplay without traveling to the answer locations.)</h5>
+                                <!-- <h5>(Test the app by clicking Demo Mode then starting the game up normally. This lets you see the gameplay without traveling to the answer locations.)</h5> -->
                                 <h2>Tech Used</h2>
                                 <p>
                                     AngularJS, JavaScript, gMaps.js, Flipclock.js, Gulp, Sass, CSS, Bootstrap, HTML
@@ -269,8 +273,11 @@
         </div>
 
         <!-- End contact section -->
+        <!-- <div class="footer">
 
+        </div> -->
     </div>
+
 
 </body>
 

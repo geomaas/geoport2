@@ -196,32 +196,39 @@ h1 {
         }
     }
 }
-
 #camera {
-  transition: .5s;
-  &:hover{
-    background: url("../assets/lightning_bridge.jpg");
-    background-size: cover;
-    background-position: center;
-    transition: .5s;
-  }
+    transition: 0.5s;
+    &:hover {
+        background: url("../assets/lightning_bridge.jpg");
+        background-size: cover;
+        background-position: center;
+        transition: 0.5s;
+    }
 }
-#drone{
-  background: url("../assets/");
-  background-size: cover;
-  background-position: center;
+#drone {
+    transition: 0.5s;
+    &:hover {
+        background: url("../assets/2ndpres_screen.png");
+        background-size: cover;
+        background-position: center;
+    }
 }
-#theatre{
-  background: url("../assets/");
-  background-size: cover;
-  background-position: center;
+#theatre {
+    transition: 0.5s;
+    &:hover {
+        background: url("../assets/jimmy.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 }
-#laptop{
-  background: url("../assets/");
-  background-size: cover;
-  background-position: center;
+#travel {
+    transition: 0.5s;
+    &:hover {
+        background: url("../assets/tajmahal_w_lauren.jpg");
+        background-size: cover;
+        background-position: center;
+    }
 }
-
 .hobby-container {
     display: inline-block;
     width: 100%;
@@ -235,21 +242,13 @@ h1 {
     padding: 2%;
     border-radius: 5px;
     h1 {
-      color: white;
+        color: white;
     }
 }
-// #hobby-win{
-//   display: none;
-//   background-color: rgba(#98878f, 0.75);
-//   width: 100%;
-//   height: 300px;
-//   margin: 5% auto;
-//   padding: 2%;
-//   border-radius: 5px;
-//   h1 {
-//     color: white;
-//   }
-// }
+#close-hobby {
+  background-color: rgba(#985e6d,1);
+
+}
 //////////////////// project styling //////////////////////////////
 .projects-container {
     display: inline-block;
@@ -407,7 +406,7 @@ h1 {
             margin-left: 2%;
             margin-top: -10%;
             color: #333333;
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-family: 'Montserrat', sans-serif;
             transition: 0.5s;
         }
@@ -415,7 +414,7 @@ h1 {
             transition: 0.5s;
             p {
                 opacity: 1;
-                font-size: 2rem;
+                font-size: 3rem;
             }
             .fa {
                 margin-left: 50%;
@@ -495,10 +494,10 @@ h1 {
             position: absolute;
             opacity: 0;
             margin-left: 2%;
-            margin-top: -21%;
+            margin-top: -20%;
             text-align: center;
             color: #333333;
-            font-size: 4.5rem;
+            font-size: 3.5rem;
             font-family: 'Montserrat', sans-serif;
             transition: 0.5s;
         }
@@ -514,11 +513,9 @@ h1 {
         }
         &:hover {
             transition: 0.5s;
-            // -webkit-transition-delay: 0.2s;
-            // /* Safari */
-            // transition-delay: 0.2s;
             p {
                 opacity: 1;
+                font-size: 4rem;
             }
             .fa {
                 margin-left: 65%;
@@ -531,3 +528,13 @@ h1 {
         }
     }
 }
+
+
+// .footer {
+//   margin: 0;
+//   padding: 0;
+//   display: inline-block;
+//   width: 100%;
+//   height: 20px;
+//   background-color: #222222;
+// }
