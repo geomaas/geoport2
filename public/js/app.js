@@ -29,7 +29,7 @@ $(document).ready(function() {
     });
 
     /*---------------- Hobby Window click events ------------------*/
-
+    $('.hobby-container').hide();
 
     $('.hobby').click(function(e) {
         e.preventDefault();
