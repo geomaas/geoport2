@@ -21,7 +21,7 @@ h1 {
     left: 0;
     background: linear-gradient(to top, #192231, #494e6b);
 }
-////////landing box/////////
+///////////////landing box//////////////////////////
 @media screen and (max-device-width: 767px) {
     .landing-box {
         font-family: 'Montserrat', sans-serif;
@@ -235,24 +235,67 @@ h1 {
     // background-color: lightgreen;
 }
 .hobby-window {
+    // display: flex;
     background-color: rgba(#98878f, 0.75);
     width: 95%;
-    height: 300px;
-    margin: 5% auto;
+    margin: 3% auto;
     padding: 2%;
     border-radius: 5px;
+    -webkit-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
+    box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
     h1 {
         color: white;
+        display: block;
     }
 }
-#close-hobby {
-  background-color: rgba(#985e6d,1);
 
+#close-hobby {
+    background-color: rgba(#985e6d,1);
 }
-.theatre {
-  width: 100%;
-  background-color: lightblue:
+@media screen and (min-device-width: 768px) {
+    .hobby-desc {
+        display: inline-block;
+        margin: auto;
+        background-color: rgba(#985e6d,1);
+        border-radius: 5px;
+        width: 32%;
+    }
+    .hobby-photos {
+        display: inline-block;
+        margin: auto auto auto 3%;
+        background-color: rgba(#985e6d,1);
+        border-radius: 5px;
+        width: 62%;
+        img {
+            width: 20%;
+            margin: 2%;
+            border-radius: 5px;
+        }
+    }
 }
+@media screen and (max-device-width: 767px) {
+  .hobby-desc {
+      display: block;
+      margin: auto;
+      background-color: rgba(#985e6d,1);
+      border-radius: 5px;
+      width: 100%;
+  }
+  .hobby-photos {
+      display: block;
+      margin: auto auto auto 3%;
+      background-color: rgba(#985e6d,1);
+      border-radius: 5px;
+      width: 100%;
+      img {
+          width: 20%;
+          margin: 2%;
+          border-radius: 5px;
+      }
+  }
+}
+
 
 //////////////////// project styling //////////////////////////////
 
@@ -351,11 +394,7 @@ h1 {
         transform: scale(1.1);
     }
 }
-
-
 //////////////////// contact info styling //////////////////////////////
-
-
 @media screen and (max-device-width: 767px) {
     .contact-container {
         width: 100%;
@@ -539,8 +578,6 @@ h1 {
         }
     }
 }
-
-
 // .footer {
 //   margin: 0;
 //   padding: 0;

@@ -205,15 +205,54 @@ h1 {
 .hobby-window {
   background-color: rgba(152, 135, 143, 0.75);
   width: 95%;
-  height: 300px;
-  margin: 5% auto;
+  margin: 3% auto;
   padding: 2%;
-  border-radius: 5px; }
+  border-radius: 5px;
+  -webkit-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75); }
   .hobby-window h1 {
-    color: white; }
+    color: white;
+    display: block; }
 
 #close-hobby {
   background-color: #985e6d; }
+
+@media screen and (min-device-width: 768px) {
+  .hobby-desc {
+    display: inline-block;
+    margin: auto;
+    background-color: #985e6d;
+    border-radius: 5px;
+    width: 32%; }
+  .hobby-photos {
+    display: inline-block;
+    margin: auto auto auto 3%;
+    background-color: #985e6d;
+    border-radius: 5px;
+    width: 62%; }
+    .hobby-photos img {
+      width: 20%;
+      margin: 2%;
+      border-radius: 5px; } }
+
+@media screen and (max-device-width: 767px) {
+  .hobby-desc {
+    display: block;
+    margin: auto;
+    background-color: #985e6d;
+    border-radius: 5px;
+    width: 100%; }
+  .hobby-photos {
+    display: block;
+    margin: auto auto auto 3%;
+    background-color: #985e6d;
+    border-radius: 5px;
+    width: 100%; }
+    .hobby-photos img {
+      width: 20%;
+      margin: 2%;
+      border-radius: 5px; } }
 
 .projects-container {
   display: inline-block;
