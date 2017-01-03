@@ -1,7 +1,7 @@
 body {
     padding-top: 50px;
 }
-h1 {
+h1 p {
     font-family: 'Montserrat', sans-serif;
 }
 .main-container {
@@ -195,38 +195,38 @@ h1 {
             transform: scale(1.1);
         }
     }
-}
-#camera {
-    transition: 0.5s;
-    &:hover {
-        background: url("../assets/lightning_bridge.jpg");
-        background-size: cover;
-        background-position: center;
+    #camera {
         transition: 0.5s;
+        &:hover {
+            background: url("../assets/lightning_bridge.jpg");
+            background-size: cover;
+            background-position: center;
+            transition: 0.5s;
+        }
     }
-}
-#drone {
-    transition: 0.5s;
-    &:hover {
-        background: url("../assets/2ndpres_screen.png");
-        background-size: cover;
-        background-position: center;
+    #drone {
+        transition: 0.5s;
+        &:hover {
+            background: url("../assets/2ndpres_screen.png");
+            background-size: cover;
+            background-position: center;
+        }
     }
-}
-#theatre {
-    transition: 0.5s;
-    &:hover {
-        background: url("../assets/jimmy.jpg");
-        background-size: cover;
-        background-position: center;
+    #theatre {
+        transition: 0.5s;
+        &:hover {
+            background: url("../assets/jimmy.jpg");
+            background-size: cover;
+            background-position: center;
+        }
     }
-}
-#travel {
-    transition: 0.5s;
-    &:hover {
-        background: url("../assets/tajmahal_w_lauren.jpg");
-        background-size: cover;
-        background-position: center;
+    #travel {
+        transition: 0.5s;
+        &:hover {
+            background: url("../assets/tajmahal_w_lauren.jpg");
+            background-size: cover;
+            background-position: center;
+        }
     }
 }
 .hobby-container {
@@ -234,72 +234,63 @@ h1 {
     width: 100%;
     // background-color: lightgreen;
 }
-.hobby-window {
-    // display: flex;
-    background-color: rgba(#98878f, 0.75);
-    width: 95%;
-    margin: 3% auto;
-    padding: 2%;
-    border-radius: 5px;
-    -webkit-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
-    box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
-    h1 {
-        color: white;
-        display: block;
-    }
-}
-
-#close-hobby {
+.btn {
+    display: block;
     background-color: rgba(#985e6d,1);
+    margin: 0;
+}
+.btn-gallery {
+    display: inline-block;
+    margin: auto;
+    color: white;
 }
 @media screen and (min-device-width: 768px) {
-    .hobby-desc {
-        display: inline-block;
-        margin: auto;
-        background-color: rgba(#985e6d,1);
+    .hobby-window {
+        // display: flex;
+        background-color: rgba(#98878f, 0.75);
+        width: 50%;
+        margin: 3% auto;
+        padding: 2%;
         border-radius: 5px;
-        width: 32%;
-    }
-    .hobby-photos {
-        display: inline-block;
-        margin: auto auto auto 3%;
-        background-color: rgba(#985e6d,1);
-        border-radius: 5px;
-        width: 62%;
-        img {
-            width: 20%;
-            margin: 2%;
-            border-radius: 5px;
+        -webkit-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
+        -moz-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
+        box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
+        h1 {
+            color: white;
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+        }
+        p {
+            color: white;
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
         }
     }
 }
 @media screen and (max-device-width: 767px) {
-  .hobby-desc {
-      display: block;
-      margin: auto;
-      background-color: rgba(#985e6d,1);
-      border-radius: 5px;
-      width: 100%;
-  }
-  .hobby-photos {
-      display: block;
-      margin: auto auto auto 3%;
-      background-color: rgba(#985e6d,1);
-      border-radius: 5px;
-      width: 100%;
-      img {
-          width: 20%;
-          margin: 2%;
-          border-radius: 5px;
-      }
-  }
+    .hobby-window {
+        // display: flex;
+        background-color: rgba(#98878f, 0.75);
+        width: 90%;
+        margin: 3% auto;
+        padding: 2%;
+        border-radius: 5px;
+        -webkit-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
+        -moz-box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
+        box-shadow: 9px 13px 25px -8px rgba(0,0,0,0.75);
+        h1 {
+            color: white;
+            display: block;
+            font-family: 'Montserrat', sans-serif;
+        }
+        p {
+            color: white;
+            font-size: 2rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
 }
-
-
 //////////////////// project styling //////////////////////////////
-
-
 .projects-container {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
@@ -419,16 +410,6 @@ h1 {
             font-size: 2rem;
             font-family: 'Montserrat', sans-serif;
         }
-        // &:hover {
-        //     transition: 0.5s;
-        //     p {
-        //         opacity: 1;
-        //     }
-        //     // .fa {
-        //     //     margin-left: 55%;
-        //     //     transform: scale(.8);
-        //     // }
-        // }
     }
 }
 @media screen and (min-device-width: 768px) {
@@ -568,21 +549,21 @@ h1 {
                 font-size: 4rem;
             }
             .fa {
-                margin-left: 65%;
+                margin-left: 60%;
                 transform: scale(.5);
             }
             #cw-logo {
-                margin-left: 79%;
+                margin-left: 70%;
                 transform: scale(.5);
             }
         }
     }
 }
-// .footer {
-//   margin: 0;
-//   padding: 0;
-//   display: inline-block;
-//   width: 100%;
-//   height: 20px;
-//   background-color: #222222;
-// }
+.footer {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-color: #222222;
+}

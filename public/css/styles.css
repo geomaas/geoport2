@@ -1,7 +1,7 @@
 body {
   padding-top: 50px; }
 
-h1 {
+h1 p {
   font-family: 'Montserrat', sans-serif; }
 
 .main-container {
@@ -167,92 +167,84 @@ h1 {
     .hobby img {
       max-width: 65%; }
     .hobby:hover {
-      transform: scale(1.1); } }
-
-#camera {
-  transition: 0.5s; }
-  #camera:hover {
-    background: url("../assets/lightning_bridge.jpg");
-    background-size: cover;
-    background-position: center;
+      transform: scale(1.1); }
+  #camera {
     transition: 0.5s; }
-
-#drone {
-  transition: 0.5s; }
-  #drone:hover {
-    background: url("../assets/2ndpres_screen.png");
-    background-size: cover;
-    background-position: center; }
-
-#theatre {
-  transition: 0.5s; }
-  #theatre:hover {
-    background: url("../assets/jimmy.jpg");
-    background-size: cover;
-    background-position: center; }
-
-#travel {
-  transition: 0.5s; }
-  #travel:hover {
-    background: url("../assets/tajmahal_w_lauren.jpg");
-    background-size: cover;
-    background-position: center; }
+    #camera:hover {
+      background: url("../assets/lightning_bridge.jpg");
+      background-size: cover;
+      background-position: center;
+      transition: 0.5s; }
+  #drone {
+    transition: 0.5s; }
+    #drone:hover {
+      background: url("../assets/2ndpres_screen.png");
+      background-size: cover;
+      background-position: center; }
+  #theatre {
+    transition: 0.5s; }
+    #theatre:hover {
+      background: url("../assets/jimmy.jpg");
+      background-size: cover;
+      background-position: center; }
+  #travel {
+    transition: 0.5s; }
+    #travel:hover {
+      background: url("../assets/tajmahal_w_lauren.jpg");
+      background-size: cover;
+      background-position: center; } }
 
 .hobby-container {
   display: inline-block;
   width: 100%; }
 
-.hobby-window {
-  background-color: rgba(152, 135, 143, 0.75);
-  width: 95%;
-  margin: 3% auto;
-  padding: 2%;
-  border-radius: 5px;
-  -webkit-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
-  box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75); }
-  .hobby-window h1 {
-    color: white;
-    display: block; }
+.btn {
+  display: block;
+  background-color: #985e6d;
+  margin: 0; }
 
-#close-hobby {
-  background-color: #985e6d; }
+.btn-gallery {
+  display: inline-block;
+  margin: auto;
+  color: white; }
 
 @media screen and (min-device-width: 768px) {
-  .hobby-desc {
-    display: inline-block;
-    margin: auto;
-    background-color: #985e6d;
+  .hobby-window {
+    background-color: rgba(152, 135, 143, 0.75);
+    width: 50%;
+    margin: 3% auto;
+    padding: 2%;
     border-radius: 5px;
-    width: 32%; }
-  .hobby-photos {
-    display: inline-block;
-    margin: auto auto auto 3%;
-    background-color: #985e6d;
-    border-radius: 5px;
-    width: 62%; }
-    .hobby-photos img {
-      width: 20%;
-      margin: 2%;
-      border-radius: 5px; } }
+    -webkit-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75); }
+    .hobby-window h1 {
+      color: white;
+      display: block;
+      font-family: 'Montserrat', sans-serif; }
+    .hobby-window p {
+      color: white;
+      font-size: 2rem;
+      font-family: 'Montserrat', sans-serif; } }
 
 @media screen and (max-device-width: 767px) {
-  .hobby-desc {
-    display: block;
-    margin: auto;
-    background-color: #985e6d;
+  .hobby-window {
+    background-color: rgba(152, 135, 143, 0.75);
+    width: 90%;
+    margin: 3% auto;
+    padding: 2%;
     border-radius: 5px;
-    width: 100%; }
-  .hobby-photos {
-    display: block;
-    margin: auto auto auto 3%;
-    background-color: #985e6d;
-    border-radius: 5px;
-    width: 100%; }
-    .hobby-photos img {
-      width: 20%;
-      margin: 2%;
-      border-radius: 5px; } }
+    -webkit-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75); }
+    .hobby-window h1 {
+      color: white;
+      display: block;
+      font-family: 'Montserrat', sans-serif; }
+    .hobby-window p {
+      color: white;
+      font-size: 2rem;
+      font-family: 'Montserrat', sans-serif; } }
 
 .projects-container {
   display: inline-block;
@@ -475,8 +467,16 @@ h1 {
         opacity: 1;
         font-size: 4rem; }
       .social-buttons:hover .fa {
-        margin-left: 65%;
+        margin-left: 60%;
         transform: scale(0.5); }
       .social-buttons:hover #cw-logo {
-        margin-left: 79%;
+        margin-left: 70%;
         transform: scale(0.5); } }
+
+.footer {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100px;
+  background-color: #222222; }
