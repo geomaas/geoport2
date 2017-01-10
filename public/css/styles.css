@@ -472,11 +472,3 @@ h1 p {
       .social-buttons:hover #cw-logo {
         margin-left: 70%;
         transform: scale(0.5); } }
-
-.footer {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  width: 100%;
-  height: 100px;
-  background-color: #222222; }
