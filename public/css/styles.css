@@ -294,7 +294,7 @@ h1 p {
 @media screen and (min-device-width: 768px) {
   .panel-body img {
     border-radius: 5px;
-    max-width: 45%;
+    max-width: 35%;
     margin: 2%;
     float: left;
     -webkit-box-shadow: 13px 13px 31px -9px rgba(0, 0, 0, 0.58);
