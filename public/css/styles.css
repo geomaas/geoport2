@@ -246,6 +246,44 @@ h1 p {
       font-size: 2rem;
       font-family: 'Montserrat', sans-serif; } }
 
+@media screen and (min-device-width: 768px) {
+  .skills-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(152, 135, 143, 0.75);
+    color: white;
+    width: 90%;
+    margin: 5%;
+    padding: 3%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    font-size: 2rem;
+    -webkit-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 9px 13px 25px -8px rgba(0, 0, 0, 0.75); }
+    .skills-container h1 {
+      color: white;
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 5rem; }
+    .skills-container .skills {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 100%; }
+      .skills-container .skills .skill-box {
+        justify-content: space-around;
+        width: 30%;
+        margin: 1%;
+        padding: 1%;
+        background-color: #985e6d;
+        border-radius: 5px; }
+        .skills-container .skills .skill-box img {
+          margin: auto;
+          max-width: 60%; } }
+
 .projects-container {
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
